@@ -15,5 +15,3 @@ This package includes:
 6.changelog.rst
 
 7.rviz file
-
-8.devel file
