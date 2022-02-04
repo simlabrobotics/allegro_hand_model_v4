@@ -5,6 +5,7 @@ This file is URDF for the Allegro Hand
 The model is right hand of Allegro Hand
 
 ==========================================================================
+
 This package includes:
 
 1.URDF file for Allegro Hand
@@ -28,11 +29,11 @@ Instruction:
 
 Launch display_r.launch with roslaunch with urdf model:allegro_hand_r.urdf
 
-Examlpe:roslaunch urdf_allegro_hand_r display_r.launch model:=urdf/allegro_hand_r.urdf
+Examlpe code:roslaunch urdf_allegro_hand_r display_r.launch model:=urdf/allegro_hand_r.urdf
 
 ===========================================================================
 
 P.S
-The file name ending with _r means that it is a file for the right hand model
+The file name ending with _r is a file only for the right hand model
 
 
