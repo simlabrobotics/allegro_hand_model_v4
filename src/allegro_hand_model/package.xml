@@ -2,7 +2,7 @@
   <name>allegro_hand_model</name>
   <version>0.5.0</version>
 
-  <description>This package contains a number of URDF tutorials.</description>
+  <description>This package contains allegro hand urdf.</description>
   <author email="jean.cho@wonik.com">jean!!</author>
 
   <maintainer email="jean.cho@wonik.com">jean!!</maintainer>
