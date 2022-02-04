@@ -5,6 +5,7 @@ This file is URDF for the Allegro Hand
 The model is right hand of Allegro Hand
 
 ==========================================================================
+
 This package includes:
 
 1.URDF file for Allegro Hand
