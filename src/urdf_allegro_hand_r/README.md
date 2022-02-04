@@ -29,7 +29,7 @@ Instruction:
 
 Launch display_r.launch with roslaunch with urdf model:allegro_hand_r.urdf
 
-Examlpe:roslaunch urdf_allegro_hand_r display_r.launch model:=urdf/allegro_hand_r.urdf
+Examlpe command line:roslaunch urdf_allegro_hand_r display_r.launch model:=urdf/allegro_hand_r.urdf
 
 ===========================================================================
 
