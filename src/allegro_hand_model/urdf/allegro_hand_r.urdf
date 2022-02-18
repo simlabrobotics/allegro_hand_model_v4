@@ -37,13 +37,11 @@
         <mesh filename="package://allegro_hand_model/meshes/40_10_link_f1.stl"/>
       </geometry>
       <material name="blue"/>
-      <origin xyz ="0 0 0.0166 "/>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://allegro_hand_model/meshes/40_10_link_f1.stl"/>
       </geometry>
-      <origin xyz ="0 0 0.0166 "/>
     </collision>
     <inertial>
       <mass value="1.1350110e+01" scale ="0.001" />
@@ -53,11 +51,11 @@
       scale= "0.000000001 0.000000001 0.000000001 0.000000001 0.000000001 0.000000001 0.000000001 0.000000001 0.000000001"/>
     </inertial>
   </link>
-  <joint name="mf1" type="revolute">
+  <joint name="jmf1" type="revolute">
     <parent link="base_link"/>
     <child link="mf1"/>
     <axis xyz="0 0 1"/>
-    <origin xyz = "0 0 0"/>
+    <origin xyz ="0 0 0.0166 "/>
     <limit lower="-0.57" upper="0.57" effort="10" velocity="3"/>
   </joint> 
 
@@ -84,10 +82,10 @@
     </inertial>
   </link>
 
-  <joint name="mf2" type="revolute">
+  <joint name="jmf2" type="revolute">
     <parent link="mf1"/>
     <child link="mf2"/>
-    <origin xyz= "0 0 0.0166"/>
+    <origin xyz= "0 0 0"/>
     <limit lower="-0.296" upper=" 1.71" effort="10" velocity="3"/>
     <axis xyz="0 1 0"/>
   </joint> 
@@ -115,7 +113,7 @@
     </inertial>
   </link>
 
-  <joint name="mf3" type="revolute">
+  <joint name="jmf3" type="revolute">
     <parent link="mf2"/>
     <child link="mf3"/>
     <origin xyz= "0 0 0.054" rpy = "0 -1.5708 0"/>
@@ -146,7 +144,7 @@
     </inertial>
   </link>
 
-  <joint name="mf4" type="revolute">
+  <joint name="jmf4" type="revolute">
     <parent link="mf3"/>
     <child link="mf4"/>
     <origin xyz= "0.0384 0 0" rpy = "0 0 0"/>
@@ -177,7 +175,7 @@
     </inertial>
   </link>
 
-  <joint name="mf5" type="fixed">
+  <joint name="jmf5" type="fixed">
     <parent link="mf4"/>
     <child link="mf5"/>
     <origin xyz= "0.0157 0 0"/>
@@ -204,7 +202,7 @@
       scale= "0.000000001 0.000000001 0.000000001 0.000000001 0.000000001 0.000000001 0.000000001 0.000000001 0.000000001"/>
     </inertial>
   </link>
-  <joint name="pf1" type="revolute">
+  <joint name="jpf1" type="revolute">
     <parent link="base_link"/>
     <child link="pf1"/>
     <axis xyz="0 0 1"/>
@@ -234,7 +232,7 @@
       scale= "0.000000001 0.000000001 0.000000001 0.000000001 0.000000001 0.000000001 0.000000001 0.000000001 0.000000001"/>
     </inertial>
   </link>
-  <joint name="pf2" type="revolute">
+  <joint name="jpf2" type="revolute">
     <parent link="pf1"/>
     <child link="pf2"/>
     <origin rpy = "0 0 0" xyz ="0 0 0 "/>
@@ -266,7 +264,7 @@
     </inertial>
   </link>
 
-  <joint name="pf3" type="revolute">
+  <joint name="jpf3" type="revolute">
     <parent link="pf2"/>
     <child link="pf3"/>
     <origin xyz= "0 0 0.054" rpy = "0 -1.5708 0"/>
@@ -297,7 +295,7 @@
     </inertial>
   </link>
 
-  <joint name="pf4" type="revolute">
+  <joint name="jpf4" type="revolute">
     <parent link="pf3"/>
     <child link="pf4"/>
     <origin xyz= "0.0384 0 0"/>
@@ -328,7 +326,7 @@
     </inertial>
   </link>
 
-  <joint name="pf5" type="fixed">
+  <joint name="jpf5" type="fixed">
     <parent link="pf4"/>
     <child link="pf5"/>
     <origin xyz= "0.0157 0 0"/>
@@ -339,7 +337,7 @@
     <visual>
       <geometry>
         <mesh filename="package://allegro_hand_model/meshes/40_10_link_f1.stl"/>
-      </geometry>
+      </geometry>      
       <material name="blue"/>
     </visual>
     <collision>
@@ -355,7 +353,7 @@
       scale= "0.000000001 0.000000001 0.000000001 0.000000001 0.000000001 0.000000001 0.000000001 0.000000001 0.000000001"/>
     </inertial>
   </link>
-  <joint name="if1" type="revolute">
+  <joint name="jif1" type="revolute">
     <parent link="base_link"/>
     <child link="if1"/>
     <axis xyz="0 0 1"/>
@@ -385,7 +383,7 @@
       scale= "0.000000001 0.000000001 0.000000001 0.000000001 0.000000001 0.000000001 0.000000001 0.000000001 0.000000001"/>
     </inertial>
   </link>
-  <joint name="if2" type="revolute">
+  <joint name="jif2" type="revolute">
     <parent link="if1"/>
     <child link="if2"/>
     <origin rpy = "0 0 0" xyz ="0 0 0 "/>
@@ -416,7 +414,7 @@
     </inertial>
   </link>
 
-  <joint name="if3" type="revolute">
+  <joint name="jif3" type="revolute">
     <parent link="if2"/>
     <child link="if3"/>
     <origin xyz= "0 0 0.054" rpy = "0 -1.5708 0"/>
@@ -448,7 +446,7 @@
     </inertial>
   </link>
 
-  <joint name="if4" type="revolute">
+  <joint name="jif4" type="revolute">
     <parent link="if3"/>
     <child link="if4"/>
     <origin xyz= "0.0384 0 0"/>
@@ -480,7 +478,7 @@
     </inertial>
   </link>
 
-  <joint name="if5" type="fixed">
+  <joint name="jif5" type="fixed">
     <parent link="if4"/>
     <child link="if5"/>
     <origin xyz= "0.0157 0 0"/>
@@ -512,7 +510,7 @@
     </inertial>
   </link>
 
-  <joint name="th1" type="revolute">
+  <joint name="jth1" type="revolute">
     <parent link="base_link"/>
     <child link="th1"/>
     <limit lower="0.36357" upper="1.4968" effort="10" velocity="3"/>
@@ -527,7 +525,7 @@
         <mesh filename="package://allegro_hand_model/meshes/40_10_link_t2.stl" scale = "0.001 0.001 0.001"/>
       </geometry>
       <material name="black"/>
-      <origin rpy = " -1.5708 -1.5708 0" xyz ="0 0 0 "/>
+      <origin rpy = "-1.5708 -1.5708 0" xyz ="0 0 0 "/>
     </visual>
     <collision>
       <geometry>
@@ -536,13 +534,13 @@
     </collision>
     <inertial>
       <mass value="1.1350110e-02" scale ="0.001"/>
-      <inertia ixx="2.7007029e+00" ixy=" 3.1772015e-03" ixz="-9.9625696e-03" 
+      <inertia ixx="2.7007029e+00" ixy="3.1772015e-03" ixz="-9.9625696e-03" 
       iyx= "3.1772015e-03" iyy="2.0578543e+00" iyz="4.1823243e-03" 
       izx = "-9.9625696e-03" izy = "4.1823243e-03" izz=" 1.2713693e+00"
       scale= "0.000000001 0.000000001 0.000000001 0.000000001 0.000000001 0.000000001 0.000000001 0.000000001 0.000000001"/>
     </inertial>
   </link>
-  <joint name="th2" type="revolute">
+  <joint name="jth2" type="revolute">
     <parent link="th1"/>
     <child link="th2"/>
     <origin rpy = "0 0 0" xyz ="0.005 0.055189 0 "/>
@@ -572,7 +570,7 @@
       scale= "0.000000001 0.000000001 0.000000001 0.000000001 0.000000001 0.000000001 0.000000001 0.000000001 0.000000001"/>
     </inertial>
   </link>
-  <joint name="th3" type="revolute">
+  <joint name="jth3" type="revolute">
     <parent link="th2"/>
     <child link="th3"/>
     <origin rpy = "0 0 0" xyz ="0 0 0 "/>
@@ -601,7 +599,7 @@
       scale= "0.000000001 0.000000001 0.000000001 0.000000001 0.000000001 0.000000001 0.000000001 0.000000001 0.000000001"/>
     </inertial>
   </link>
-  <joint name="th4" type="revolute">
+  <joint name="jth4" type="revolute">
     <parent link="th3"/>
     <child link="th4"/>
     <origin rpy = "0 0 0" xyz ="0 0.051204 0 "/>
@@ -630,7 +628,7 @@
       scale= "0.000000001 0.000000001 0.000000001 0.000000001 0.000000001 0.000000001 0.000000001 0.000000001 0.000000001"/>
     </inertial>
   </link>
-  <joint name="th5" type="fixed">
+  <joint name="jth5" type="fixed">
     <parent link="th4"/>
     <child link="th5"/>
     <origin rpy = "0 -1.4835335 0" xyz ="0 0.0313 0 "/>
