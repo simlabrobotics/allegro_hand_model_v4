@@ -498,7 +498,7 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://allegro_hand_model/meshes/40_10_link_t1_r.stl"/>
+        <mesh filename="package://allegro_hand_model/meshes/40_10_link_t1_r.stl" scale = "0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <inertial>
@@ -515,7 +515,7 @@
     <child link="th1"/>
     <limit lower="0.36357" upper="1.4968" effort="10" velocity="3"/>
     <axis xyz="0 0 -1"/>
-    <origin rpy = "-0.0872665 0 0" xyz ="-0.0182 0.016958 -0.073288 " />
+    <origin rpy = "-0.0872665 0 0" xyz ="-0.0182 0.016958 -0.0723 " />
   </joint>
 
 
