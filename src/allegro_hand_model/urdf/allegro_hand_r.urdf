@@ -524,13 +524,14 @@
       <geometry>
         <mesh filename="package://allegro_hand_model/meshes/40_10_link_t2.stl" scale = "0.001 0.001 0.001"/>
       </geometry>
-      <material name="black"/>
+      <material name="blue"/>
       <origin rpy = "-1.5708 -1.5708 0" xyz ="0 0 0 "/>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://allegro_hand_model/meshes/40_10_link_t2.stl" scale = "0.001 0.001 0.001"/>
       </geometry>
+      <origin rpy = "-1.5708 -1.5708 0" xyz ="0 0 0 "/>
     </collision>
     <inertial>
       <mass value="1.1350110e-02" scale ="0.001"/>
@@ -552,15 +553,16 @@
   <link name="th3">
     <visual>
       <geometry>
-        <mesh filename="package://allegro_hand_model/meshes/40_10_link_t3.stl"/>
+        <mesh filename="package://allegro_hand_model/meshes/40_10_link_t3.stl" scale = "0.001 0.001 0.001"/>
       </geometry>
       <material name="black"/>
-      <origin rpy = " 0  0 -1.5708" xyz ="0 0 0 "/>
+      <origin rpy = "1.5708 0 1.5708" xyz ="0 0 0 "/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://allegro_hand_model/meshes/40_10_link_t3.stl" />
+        <mesh filename="package://allegro_hand_model/meshes/40_10_link_t3.stl" scale = "0.001 0.001 0.001"/>
       </geometry>
+      <origin rpy = "1.5708 0 1.5708" xyz ="0 0 0 "/>
     </collision>
     <inertial>
       <mass value=" 4.0206693e-02" scale ="0.001"/>
@@ -574,22 +576,23 @@
     <parent link="th2"/>
     <child link="th3"/>
     <origin rpy = "0 0 0" xyz ="0 0 0 "/>
-    <limit lower="-0.2897" upper="1.7440" effort="10" velocity="3"/>
+    <limit lower="-0.2897" upper="1.633" effort="10" velocity="3"/>
     <axis xyz="1 0 0"/>
   </joint>
 
   <link name="th4">
     <visual>
       <geometry>
-        <mesh filename="package://allegro_hand_model/meshes/40_10_link_t4.stl"/>
+        <mesh filename="package://allegro_hand_model/meshes/40_10_link_t4.stl" scale = "0.001 0.001 0.001"/>
       </geometry>
       <material name="blue"/>
-      <origin rpy = " 0  0 -1.5708" xyz ="0 0 0 "/>
+      <origin rpy = "1.5708 0 1.5708" xyz ="0 0 0 "/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://allegro_hand_model/meshes/40_10_link_t4.stl" />
+        <mesh filename="package://allegro_hand_model/meshes/40_10_link_t4.stl" scale = "0.001 0.001 0.001"/>
       </geometry>
+      <origin rpy = "1.5708 0 1.5708" xyz ="0 0 0 "/>
     </collision>
     <inertial>
       <mass value=" 4.0750131e-02" scale ="0.001"/>
@@ -602,7 +605,7 @@
   <joint name="jth4" type="revolute">
     <parent link="th3"/>
     <child link="th4"/>
-    <origin rpy = "0 0 0" xyz ="0 0.051204 0 "/>
+    <origin rpy = "0 0 0" xyz ="0 0.051204 -0.00448 "/>
     <limit lower="-0.2622" upper="1.81991" effort="10" velocity="3"/>
     <axis xyz="1 0 0"/>
   </joint>
