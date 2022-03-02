@@ -545,7 +545,7 @@
     <parent link="th1"/>
     <child link="th2"/>
     <origin rpy = "0 0 0" xyz ="0.005 0.055189 0 "/>
-    <limit lower="-0.20504289" upper="1.263" effort="10" velocity="3"/>
+    <limit lower="-0.20504289" upper="1.13" effort="10" velocity="3"/>
     <axis xyz="0 1 0"/>
     
   </joint>
@@ -605,7 +605,7 @@
   <joint name="jth4" type="revolute">
     <parent link="th3"/>
     <child link="th4"/>
-    <origin rpy = "0 0 0" xyz ="0 0.051204 -0.00448 "/>
+    <origin rpy = "0 0 0" xyz ="0 0.051204 0 "/>
     <limit lower="-0.2622" upper="1.81991" effort="10" velocity="3"/>
     <axis xyz="1 0 0"/>
   </joint>
