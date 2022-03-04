@@ -522,19 +522,19 @@
   <link name="th2">
     <visual>
       <geometry>
-        <mesh filename="package://allegro_hand_model/meshes/40_10_link_t2.stl" scale = "0.001 0.001 0.001"/>
+        <mesh filename="package://allegro_hand_model/meshes/40_10_link_f1.stl"/>
       </geometry>
       <material name="blue"/>
       <origin rpy = "-1.5708 -1.5708 0" xyz ="0 0 0 "/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://allegro_hand_model/meshes/40_10_link_t2.stl" scale = "0.001 0.001 0.001"/>
+        <mesh filename="package://allegro_hand_model/meshes/40_10_link_f1.stl"/>
       </geometry>
       <origin rpy = "-1.5708 -1.5708 0" xyz ="0 0 0 "/>
     </collision>
     <inertial>
-      <mass value="1.1350110e-02" scale ="0.001"/>
+      <mass value="1.1350110e+01" scale ="0.001"/>
       <inertia ixx="2.7007029e+00" ixy="3.1772015e-03" ixz="-9.9625696e-03" 
       iyx= "3.1772015e-03" iyy="2.0578543e+00" iyz="4.1823243e-03" 
       izx = "-9.9625696e-03" izy = "4.1823243e-03" izz=" 1.2713693e+00"
